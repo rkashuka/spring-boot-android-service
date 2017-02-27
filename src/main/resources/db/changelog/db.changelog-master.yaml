@@ -1,20 +1,20 @@
 databaseChangeLog:
   - changeSet:
       id: 1
-      author: jkutner
+      author: rkashuka
       changes:
         - createTable:
-            tableName: book
+            tableName: users
             columns:
               - column:
-                  name: id
-                  type: int
+                  name: username
+                  type: varchar(24)
                   autoIncrement: true
                   constraints:
                     primaryKey: true
                     nullable: false
               - column:
-                  name: isbn
-                  type: varchar(255)
+                  name: password
+                  type: varchar(24)
                   constraints:
                     nullable: false
